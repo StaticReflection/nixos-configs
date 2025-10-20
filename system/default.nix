@@ -1,5 +1,6 @@
 {
     imports = [
+        ./IME
         ./boot
         ./desktop-manager
         ./display-manager

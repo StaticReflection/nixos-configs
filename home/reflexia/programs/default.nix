@@ -15,5 +15,6 @@
         prismlauncher
         vscode
         qq
+	    feishu
     ];
 }

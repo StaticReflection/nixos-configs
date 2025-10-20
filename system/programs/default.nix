@@ -7,5 +7,7 @@
         git
         kubectl
         fastfetch
+        python314
+        conda
     ];
 }
