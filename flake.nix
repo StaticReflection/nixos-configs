@@ -20,8 +20,6 @@
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
-    nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
     nixosConfigurations.reflexia-nixos = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs;};
       system = "x86_64-linux";

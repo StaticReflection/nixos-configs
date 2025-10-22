@@ -9,5 +9,9 @@
         fastfetch
         python314
         conda
+        libglibutil
+        glib
+        glibc
+        tree
     ];
 }

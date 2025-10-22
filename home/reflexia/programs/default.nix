@@ -11,10 +11,12 @@
         clash-verge-rev
         microsoft-edge
         vscode
-        hmcl
         prismlauncher
         vscode
         qq
 	    feishu
+        libreoffice-qt
+        waydroid
+        bitwarden-desktop
     ];
 }
