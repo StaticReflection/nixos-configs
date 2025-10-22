@@ -16,7 +16,8 @@
         qq
 	    feishu
         libreoffice-qt
-        waydroid
         bitwarden-desktop
+        p7zip
+        kdePackages.kcalc
     ];
 }

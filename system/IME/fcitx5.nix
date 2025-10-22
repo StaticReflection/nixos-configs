@@ -10,6 +10,9 @@
             addons = with pkgs; [
                 fcitx5-chinese-addons
                 fcitx5-rime
+                librime
+                librime-lua
+                rime-ice
             ];
         };
     };

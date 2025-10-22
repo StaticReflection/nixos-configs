@@ -11,6 +11,7 @@
         ./shell
         ./sound
         ./theme
+        ./VT
     ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
