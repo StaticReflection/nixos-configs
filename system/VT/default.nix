@@ -1,5 +1,5 @@
 {
-    imports = [
-        ./waydroid.nix
-    ];
+  imports = [
+    ./waydroid.nix
+  ];
 }

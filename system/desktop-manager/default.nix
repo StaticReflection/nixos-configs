@@ -1,5 +1,5 @@
 {
-    imports = [
-        ./plasma6.nix
-    ];
+  imports = [
+    ./plasma6.nix
+  ];
 }

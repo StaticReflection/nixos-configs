@@ -1,22 +1,25 @@
 {
-    imports = [
-        ./IME
-        ./boot
-        ./desktop-manager
-        ./display-manager
-        ./fonts
-        ./localization
-        ./network
-        ./programs
-        ./shell
-        ./sound
-        ./theme
-        ./VT
-    ];
+  imports = [
+    ./IME
+    ./boot
+    ./desktop-manager
+    ./display-manager
+    ./fonts
+    ./localization
+    ./network
+    ./programs
+    ./shell
+    ./sound
+    ./theme
+    ./VT
+  ];
 
-    nix.settings.experimental-features = [ "nix-command" "flakes" ];
-    
-    nixpkgs.config.allowUnfree = true;
-    
-    system.stateVersion = "25.05";
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
+
+  nixpkgs.config.allowUnfree = true;
+
+  system.stateVersion = "25.05";
 }

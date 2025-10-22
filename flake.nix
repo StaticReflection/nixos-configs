@@ -19,28 +19,36 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
-    nixosConfigurations.reflexia-nixos = nixpkgs.lib.nixosSystem {
-      specialArgs = { inherit inputs;};
-      system = "x86_64-linux";
-      modules = [
-        # Device config
-        ./devices/WUJIE14-PRO
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      ...
+    }@inputs:
+    {
+      nixosConfigurations.reflexia-nixos = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; };
+        system = "x86_64-linux";
+        modules = [
+          # Device config
+          ./devices/WUJIE14-PRO
 
-        # System config
-        ./system
+          # System config
+          ./system
 
-        # Users config
-        ./home/default.nix
+          # Users config
+          ./home/default.nix
 
-        # Home config
-        home-manager.nixosModules.home-manager {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
+          # Home config
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
 
-          home-manager.users.reflexia = import ./home/reflexia;
-        }
-      ];
+            home-manager.users.reflexia = import ./home/reflexia;
+          }
+        ];
+      };
     };
-  };
 }

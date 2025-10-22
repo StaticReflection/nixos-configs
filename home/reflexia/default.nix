@@ -1,12 +1,17 @@
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 {
-    imports = [
-        ./programs
-    ];
+  imports = [
+    ./programs
+  ];
 
-    home.stateVersion = "25.05";
+  home.stateVersion = "25.05";
 
-    home.username = "reflexia";
-    home.homeDirectory = lib.mkForce "/home/reflexia";
+  home.username = "reflexia";
+  home.homeDirectory = lib.mkForce "/home/reflexia";
 }
