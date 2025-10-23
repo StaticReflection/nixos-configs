@@ -2,8 +2,7 @@
   imports = [
     ./IME
     ./boot
-    ./desktop-manager
-    ./display-manager
+    ./gui
     ./fonts
     ./localization
     ./network
