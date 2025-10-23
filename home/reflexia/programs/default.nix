@@ -9,7 +9,6 @@
 
   home.packages = with pkgs; [
     telegram-desktop
-    clash-verge-rev
     microsoft-edge
     prismlauncher
     qq
@@ -18,5 +17,8 @@
     bitwarden-desktop
     p7zip
     kdePackages.kcalc
+    wechat
+    steam
+    waydroid-helper
   ];
 }
