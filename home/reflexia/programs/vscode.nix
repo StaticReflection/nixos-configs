@@ -23,7 +23,10 @@
         "editor.cursorSmoothCaretAnimation" = "on"; # 始终启用平滑脱字号动画
         "terminal.integrated.smoothScrolling" = true; # 控制终端是否将使用动画滚动
         "editor.cursorBlinking" = "smooth"; # 控制光标的动画样式
-        "editor.formatOnSave" = true; # 保存时设置文件格式。格式化程序必须可用，并且不得关闭编辑器。当 #files.autoSave# 设置为 afterDelay 时，仅在显式保存时才会格式化文件
+        "editor.formatOnSave" = true; # 保存文件时自动格式化
+        "editor.fontFamily" =
+          "'JetBrainsMono Nerd Font', 'Noto Sans Mono', 'Noto Sans Mono CJK SC', monospace"; # 字体
+        "editor.fontLigatures" = true; # 启用连字
       };
     };
   };

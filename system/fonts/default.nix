@@ -2,34 +2,39 @@
 
 {
   fonts = {
+    enableDefaultPackages = true;
     fontDir.enable = true;
+
     packages = with pkgs; [
       noto-fonts
-      source-code-pro
-      source-han-sans
-      source-han-serif
-      sarasa-gothic
+      noto-fonts-extra
+      noto-fonts-cjk-sans
+      noto-fonts-cjk-serif
+      noto-fonts-color-emoji
+      nerd-fonts.jetbrains-mono
     ];
-    # 设置 fontconfig 防止出现乱码
+
     fontconfig = {
       defaultFonts = {
-        emoji = [
-          "Noto Color Emoji"
-        ];
-        monospace = [
-          "Noto Sans Mono CJK SC"
-          "Sarasa Mono SC"
-          "DejaVu Sans Mono"
+        serif = [
+          "Noto Serif"
+          "Noto Serif CJK SC" # 简体中文衬线
+          "Noto Serif CJK TC" # 繁体中文衬线
+          "Noto Serif CJK JP" # 日文衬线
         ];
         sansSerif = [
-          "Noto Sans CJK SC"
-          "Source Han Sans SC"
-          "DejaVu Sans"
+          "Noto Sans"
+          "Noto Sans CJK SC" # 简体中文无衬线
+          "Noto Sans CJK TC" # 繁体中文无衬线
+          "Noto Sans CJK JP" # 日文无衬线
         ];
-        serif = [
-          "Noto Serif CJK SC"
-          "Source Han Serif SC"
-          "DejaVu Serif"
+        monospace = [
+          "JetBrainsMono Nerd Font" # 编程字体
+          "Noto Sans Mono"
+          "Noto Sans Mono CJK SC" # 中文等宽
+        ];
+        emoji = [
+          "Noto Color Emoji" # 彩色表情符号
         ];
       };
     };

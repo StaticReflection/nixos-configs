@@ -46,6 +46,8 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
 
+            home-manager.backupFileExtension = "backup";
+
             home-manager.users.reflexia = import ./home/reflexia;
           }
         ];
