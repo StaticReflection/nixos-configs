@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   users.users.reflexia = {
     description = "ReFLEXiA";
@@ -6,5 +8,6 @@
       "networkmanager"
       "wheel"
     ];
+    shell = pkgs.fish;
   };
 }

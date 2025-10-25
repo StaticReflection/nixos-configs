@@ -38,7 +38,7 @@
           ./system
 
           # Users config
-          ./home/default.nix
+          ./home
 
           # Home config
           home-manager.nixosModules.home-manager
