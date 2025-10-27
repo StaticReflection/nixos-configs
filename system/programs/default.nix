@@ -3,6 +3,7 @@
 {
   imports = [
     ./fish.nix
+    ./teamviewer.nix
   ];
 
   environment.systemPackages = with pkgs; [
