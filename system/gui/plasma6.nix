@@ -1,3 +1,3 @@
 {
-  services.desktopManager.plasma6.enable = false;
+  services.desktopManager.plasma6.enable = true;
 }

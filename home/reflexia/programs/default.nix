@@ -4,6 +4,7 @@
   imports = [
     ./git.nix
     ./vscode.nix
+    ./niri.nix
   ];
 
   home.packages = with pkgs; [
