@@ -21,5 +21,6 @@
     piliplus
     google-chrome
     netease-cloud-music-gtk
+    nur.repos.shadowrz.klassy-qt6
   ];
 }
