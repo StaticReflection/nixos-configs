@@ -11,6 +11,7 @@
         jnoortheen.nix-ide # Nix
         dart-code.dart-code # Dart
         dart-code.flutter # Flutter
+        arrterian.nix-env-selector # Nix Environment Selector
       ];
       # 设置
       userSettings = {

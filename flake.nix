@@ -48,7 +48,9 @@
     }@inputs:
     {
       nixosConfigurations.reflexia-nixos = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; };
+        specialArgs = {
+          inherit inputs;
+        };
         system = "x86_64-linux";
         modules = [
           # Device config
@@ -63,12 +65,16 @@
           # Home config
           home-manager.nixosModules.home-manager
           {
-            home-manager.extraSpecialArgs = { inherit inputs; };
+            home-manager.extraSpecialArgs = {
+              inherit inputs;
+            };
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.backupFileExtension = "backup";
 
-            home-manager.users.reflexia = import ./home/reflexia;
+            home-manager.users = {
+              reflexia = import ./home/reflexia;
+            };
           }
         ];
       };

@@ -13,6 +13,7 @@
     ./sound
     ./theme
     ./VT
+    ./env
   ];
 
   nix.settings.experimental-features = [
@@ -21,6 +22,8 @@
   ];
 
   nixpkgs.config.allowUnfree = true;
+
+  nixpkgs.config.android_sdk.accept_license = true;
 
   services.flatpak.enable = true;
   systemd.services.flatpak-repo = {

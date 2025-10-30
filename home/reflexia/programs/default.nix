@@ -18,5 +18,8 @@
     kdePackages.kcalc
     steam
     waydroid-helper
+    piliplus
+    google-chrome
+    netease-cloud-music-gtk
   ];
 }

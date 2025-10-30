@@ -19,7 +19,6 @@
     glibc
     tree
     nixfmt-rfc-style # Nix code formatter
-    flutter # flutter sdk
     xwayland-satellite
   ];
 }
