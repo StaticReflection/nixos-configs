@@ -13,6 +13,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nixos-generators = {
       url = "github:nix-community/nixos-generators";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -44,15 +49,23 @@
       self,
       nixpkgs,
       home-manager,
+      nur,
       ...
     }@inputs:
     {
+      nixpkgs.overlays = [ inputs.nur.overlay ];
+
       nixosConfigurations.reflexia-nixos = nixpkgs.lib.nixosSystem {
         specialArgs = {
           inherit inputs;
         };
         system = "x86_64-linux";
         modules = [
+          # Adds the NUR overlay
+          nur.modules.nixos.default
+          # NUR modules to import
+          nur.legacyPackages.x86_64-linux.repos.iopq.modules.xraya
+
           # Device config
           ./devices/WUJIE14-PRO
 
