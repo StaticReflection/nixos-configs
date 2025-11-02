@@ -4,7 +4,9 @@
   pkgs,
   ...
 }:
-
+let
+  pkgs-stable = import inputs.nixpkgs-stable { system = "x86_64-linux"; };
+in
 {
   imports = [
     inputs.niri.homeModules.niri
@@ -29,7 +31,10 @@
           ];
         }
       ];
-
     };
   };
+
+  home.packages = with pkgs; [
+    pkgs-stable.libdisplay-info
+  ];
 }

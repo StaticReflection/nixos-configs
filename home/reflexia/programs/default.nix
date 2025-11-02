@@ -4,7 +4,7 @@
   imports = [
     ./git.nix
     ./vscode.nix
-    ./niri.nix
+    # ./niri.nix
   ];
 
   home.packages = with pkgs; [
@@ -18,9 +18,8 @@
     kdePackages.kcalc
     steam
     waydroid-helper
-    piliplus
-    google-chrome
-    netease-cloud-music-gtk
     nur.repos.shadowrz.klassy-qt6
+    vlc
+    appimage-run
   ];
 }
