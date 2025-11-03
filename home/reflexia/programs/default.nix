@@ -23,5 +23,6 @@
     nur.repos.shadowrz.klassy-qt6
     vlc
     appimage-run
+    wechat-uos
   ];
 }
