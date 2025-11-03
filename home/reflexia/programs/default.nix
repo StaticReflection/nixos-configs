@@ -6,6 +6,7 @@
     ./vscode.nix
     # ./niri.nix
     ./lutris.nix
+    ./linuxqq.nix
   ];
 
   home.packages = with pkgs; [
