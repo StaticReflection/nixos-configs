@@ -1,10 +1,7 @@
 { pkgs, ... }:
 
 {
-  imports = [
-    ./fish.nix
-    ./teamviewer.nix
-  ];
+  imports = [ ];
 
   environment.systemPackages = with pkgs; [
     vim
@@ -12,8 +9,6 @@
     git
     kubectl
     fastfetch
-    python314
-    conda
     libglibutil
     glib
     glibc
