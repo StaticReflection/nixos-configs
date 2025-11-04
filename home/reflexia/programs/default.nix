@@ -11,6 +11,7 @@
   ];
 
   home.packages = with pkgs; [
+    discord
     telegram-desktop
     microsoft-edge
     prismlauncher
