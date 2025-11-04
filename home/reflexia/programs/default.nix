@@ -7,6 +7,7 @@
     # ./niri.nix
     ./lutris.nix
     ./linuxqq.nix
+    ./steam.nix
   ];
 
   home.packages = with pkgs; [
@@ -18,7 +19,6 @@
     bitwarden-desktop
     p7zip
     kdePackages.kcalc
-    steam
     waydroid-helper
     nur.repos.shadowrz.klassy-qt6
     vlc
