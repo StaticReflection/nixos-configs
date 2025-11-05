@@ -4,7 +4,7 @@
   imports = [
     ./git.nix
     ./vscode.nix
-    # ./niri.nix
+    ./niri.nix
     ./lutris.nix
     ./linuxqq.nix
     ./steam.nix
