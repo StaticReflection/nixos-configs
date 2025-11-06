@@ -19,7 +19,7 @@
     feishu
     libreoffice-qt
     bitwarden-desktop
-    p7zip
+    _7zz-rar
     kdePackages.kcalc
     waydroid-helper
     nur.repos.shadowrz.klassy-qt6
