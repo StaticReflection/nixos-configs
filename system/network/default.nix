@@ -3,12 +3,17 @@
     ./mihomo.nix
   ];
 
-  networking.hostName = "reflexia-nixos";
-  networking.networkmanager.enable = true;
+  networking = {
+    hostName = "reflexia-nixos";
+    networkmanager.enable = true;
 
-  # Proxy
-  networking.proxy.default = "http://localhost:7897";
-  networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain,::1";
+    # Proxy
+    proxy.default = "http://localhost:7897";
+    proxy.noProxy = "127.0.0.1,localhost,internal.domain,::1";
+
+    # DNS
+    nameservers = [ "8.8.8.8" ];
+  };
 
   # TUN Mode
   services.resolved.enable = true;
