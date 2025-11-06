@@ -8,6 +8,7 @@
     ./lutris.nix
     ./linuxqq.nix
     ./steam.nix
+    ./noctalia.nix
   ];
 
   home.packages = with pkgs; [

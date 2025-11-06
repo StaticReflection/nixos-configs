@@ -1,71 +1,5 @@
 {
   "nodes": {
-    "dankMaterialShell": {
-      "inputs": {
-        "dgop": [
-          "dgop"
-        ],
-        "dms-cli": [
-          "dms-cli"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1762323367,
-        "narHash": "sha256-79D8TnzBg96nAi0t0PcJETbjaPWrXv4KRPxOt1+lmEU=",
-        "owner": "AvengeMedia",
-        "repo": "DankMaterialShell",
-        "rev": "ce6f3afb39db31a3601ce9bb1f3e10fc9702db3b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "AvengeMedia",
-        "repo": "DankMaterialShell",
-        "type": "github"
-      }
-    },
-    "dgop": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1762287411,
-        "narHash": "sha256-ol44//PHYCH6oLrJFuNJ/mJs+fVICgeLQd8LF3GHYuU=",
-        "owner": "AvengeMedia",
-        "repo": "dgop",
-        "rev": "027f6c4f99473a29e58e35b8ff1a25dccaebea86",
-        "type": "github"
-      },
-      "original": {
-        "owner": "AvengeMedia",
-        "repo": "dgop",
-        "type": "github"
-      }
-    },
-    "dms-cli": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1762320571,
-        "narHash": "sha256-C/93PSmwkEyOHgVm168qWNJjFfQFv6H2uYHp1dZ93i0=",
-        "owner": "AvengeMedia",
-        "repo": "danklinux",
-        "rev": "77e3a50c2c95829c68e03e2327d698735e05a341",
-        "type": "github"
-      },
-      "original": {
-        "owner": "AvengeMedia",
-        "repo": "danklinux",
-        "type": "github"
-      }
-    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": [
@@ -281,6 +215,30 @@
         "type": "github"
       }
     },
+    "noctalia": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "quickshell": [
+          "quickshell"
+        ],
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1762311813,
+        "narHash": "sha256-wiBOzvHWxKKovbfBpzWfjhXGpO4n/2owlsEHBlL/1k0=",
+        "owner": "noctalia-dev",
+        "repo": "noctalia-shell",
+        "rev": "c78e3b5653295fae5a7e9c795eaefbdf5efcd6c6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "noctalia-dev",
+        "repo": "noctalia-shell",
+        "type": "github"
+      }
+    },
     "nur": {
       "inputs": {
         "flake-parts": "flake-parts",
@@ -302,11 +260,28 @@
         "type": "github"
       }
     },
+    "quickshell": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1761897390,
+        "narHash": "sha256-er4gYrIoThYLjlsOMTysoRfn67d1Gci+ZpqDrtQxrA0=",
+        "owner": "outfoxxed",
+        "repo": "quickshell",
+        "rev": "fc704e6b5d445899a1565955268c91942a4f263f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "outfoxxed",
+        "repo": "quickshell",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
-        "dankMaterialShell": "dankMaterialShell",
-        "dgop": "dgop",
-        "dms-cli": "dms-cli",
         "home-manager": "home-manager",
         "niri": "niri",
         "nixos-generators": "nixos-generators",
@@ -314,7 +289,24 @@
         "nixpkgs-master": "nixpkgs-master",
         "nixpkgs-stable": "nixpkgs-stable_2",
         "nixpkgs-unstable": "nixpkgs-unstable",
-        "nur": "nur"
+        "noctalia": "noctalia",
+        "nur": "nur",
+        "quickshell": "quickshell"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
       }
     },
     "xwayland-satellite-stable": {
