@@ -26,5 +26,6 @@
     vlc
     appimage-run
     wechat-uos
+    qbittorrent-enhanced
   ];
 }
