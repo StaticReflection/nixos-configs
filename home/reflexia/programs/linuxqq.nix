@@ -24,16 +24,16 @@ in
     qq
   ];
 
-  home.file = {
-    ".local/share/applications/QQ.desktop".text = ''
-      [Desktop Entry]
-      Version=3.2.20
-      Type=Application
-      Name=QQ
-      Exec=linuxqq
-      Icon=${icons}
-      StartupWMClass=qq
-      StartupNotify=true
-    '';
-  };
+  # home.file = {
+  #   ".local/share/applications/QQ.desktop".text = ''
+  #     [Desktop Entry]
+  #     Version=3.2.20
+  #     Type=Application
+  #     Name=QQ
+  #     Exec=linuxqq
+  #     Icon=${icons}
+  #     StartupWMClass=qq
+  #     StartupNotify=true
+  #   '';
+  # };
 }
