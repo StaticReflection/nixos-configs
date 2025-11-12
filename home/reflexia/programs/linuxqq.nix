@@ -20,7 +20,8 @@ let
 in
 {
   home.packages = with pkgs; [
-    linuxqq_pkg
+    # linuxqq_pkg
+    qq
   ];
 
   home.file = {
