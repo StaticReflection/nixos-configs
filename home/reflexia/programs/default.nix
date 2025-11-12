@@ -9,6 +9,7 @@
     ./linuxqq.nix
     ./steam.nix
     ./noctalia.nix
+    ./nixvim.nix
   ];
 
   home.packages = with pkgs; [
