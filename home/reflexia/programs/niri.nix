@@ -13,7 +13,9 @@
 
   programs.niri = {
     enable = true;
+
     settings = {
+      # 自启动项
       spawn-at-startup = [
         {
           command = [
@@ -27,6 +29,11 @@
           ];
         }
       ];
+
+      # 按键绑定
+      binds = {
+        "Mod+T".action.spawn = "kitty";
+      };
     };
   };
 }

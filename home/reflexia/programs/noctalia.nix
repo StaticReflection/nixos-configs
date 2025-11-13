@@ -26,7 +26,7 @@
         marginVertical = 0.25; # 垂直边距
         marginHorizontal = 0.25; # 水平边距
         outerCorners = false; # 外侧圆角
-        exclusive = false; # 独占栏空间
+        exclusive = true; # 独占栏空间
         widgets = {
           left = [
             {
@@ -209,7 +209,7 @@
         ];
       };
       dock = {
-        enabled = true;
+        enabled = false;
         displayMode = "always_visible";
         backgroundOpacity = 1;
         floatingRatio = 1;
@@ -268,7 +268,7 @@
         qt = false;
         kcolorscheme = false;
         alacritty = false;
-        kitty = false;
+        kitty = true;
         ghostty = false;
         foot = false;
         wezterm = false;
