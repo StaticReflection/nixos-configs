@@ -65,7 +65,7 @@
           ./devices/WUJIE14-PRO
 
           # System config
-          ./system
+          ./configuration.nix
 
           # Users config
           ./home
