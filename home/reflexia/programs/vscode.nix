@@ -16,6 +16,7 @@
         esbenp.prettier-vscode # Prettier
         christian-kohler.npm-intellisense # NPM IntelliSense
         christian-kohler.path-intellisense # Path IntelliSense
+        ritwickdey.liveserver
       ];
       # 设置
       userSettings = {

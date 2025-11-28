@@ -1,0 +1,9 @@
+name: mysql
+services:
+  mysql:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Q8FbKCb5hc6faeet
+    ports:
+      - "3306:3306"

@@ -32,5 +32,8 @@
     qbittorrent-enhanced # qBittorrent Enhanced Edition
     hoppscotch # Hoppscotch
     drawio # draw.io
+    navicat-premium
+    dbeaver-bin
+    php
   ];
 }

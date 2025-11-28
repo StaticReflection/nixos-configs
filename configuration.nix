@@ -14,6 +14,7 @@
     ./theme
     ./VT
     ./env
+    ./docker
   ];
 
   nix.settings.experimental-features = [
